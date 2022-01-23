@@ -1,0 +1,45 @@
+
+]
+java:S1126ˆ"AReplace this if-then-else statement by a single return statement.(“¦â±úÿÿÿÿ
+W	java:S125Ð"<This block of commented-out lines of code should be removed.(žüŽßÿÿÿÿÿ
+N
+java:S1135Ö"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+V
+java:S1128"4Remove this unused import 'revature.model.Customer'.(Ëö‚²ýÿÿÿÿ8Ûßá¶è/
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8Ûßá¶è/
+e
+java:S1192"JDefine a constant instead of duplicating this literal "last_name" 3 times.(ä–ŽÈþÿÿÿÿ
+g
+java:S1192"LDefine a constant instead of duplicating this literal "rank_person" 3 times.(Ûç˜²ùÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "login" 3 times.(´³ÙÆøÿÿÿÿ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "password" 3 times.(Ûç˜²ùÿÿÿÿ
+f
+java:S1192"KDefine a constant instead of duplicating this literal "first_name" 3 times.(´³ÙÆøÿÿÿÿ
+e
+java:S1192"JDefine a constant instead of duplicating this literal "person_id" 5 times.(ä–ŽÈþÿÿÿÿ
+l	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ìŸïýÿÿÿÿ
+k
+java:S2095»"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(àø„˜úÿÿÿÿ
+e
+java:S2095„"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…—‹q
+e
+java:S2095v"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖÐ½
+f
+java:S2095–"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÏÐ˜š
+j
+java:S2095D"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¦ïµ«úÿÿÿÿ
+e
+java:S2095*"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖÐ½
+j
+java:S2095Y"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(žÎçÿÿÿÿÿ
+j
+java:S2095g"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ë¹§£úÿÿÿÿ
+f
+java:S2095¦"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ó„²
+k
+java:S2095Ë"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(â“’êøÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‰ð—Çýÿÿÿÿ

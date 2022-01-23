@@ -1,0 +1,11 @@
+
+c
+java:S1172"ARemove these unused method parameters "number", "balance", "pid".(½¨íüÿÿÿÿ8£á¿ç/
+k
+java:S1172"IRemove these unused method parameters "number", "balance", "pid", "pid2".(µß¬¢üÿÿÿÿ8¤á¿ç/
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(Éş’•8·‘¹æ/
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(‘æãëûÿÿÿÿ8¼‘¹æ/
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(çÍ¼8½‘¹æ/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(‘æãëûÿÿÿÿ8¾‘¹æ/
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(‘úÌì8¿‘¹æ/
+U	java:S106I"9Replace this use of System.out or System.err by a logger.(çÍ¼8À‘¹æ/

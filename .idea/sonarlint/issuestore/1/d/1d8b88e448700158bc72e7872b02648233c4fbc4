@@ -1,0 +1,22 @@
+
+V
+java:S1118":Add a private constructor to hide the implicit public one.(Õ¡ÖC8¡ŒÑğç/
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(š«ÇŞøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¬»‘’
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ş‘›ïøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¬Ç¬ã
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»¹Ğ³ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(êı¥ºøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ôêïùşÿÿÿÿ
+M	java:S106 "9Replace this use of System.out or System.err by a logger.(åë"
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ÎÆû¬şÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¸ş¢öûÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(›ÑÁÄ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(•âŠ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(³¾õÂúÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+7	java:S1311""Add a default case to this switch.(¨ÕÉ
+V	java:S1259"<This block of commented-out lines of code should be removed.(¡à—”ÿÿÿÿÿ
+S
+java:S1128"=Remove this unused import 'revature.service.CustomerService'.(ú¥‘
