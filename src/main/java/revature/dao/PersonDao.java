@@ -11,6 +11,16 @@ import java.util.List;
 
 public class PersonDao implements DaoPersonInterface {
 
+    private Connection con;
+
+    public PersonDao(Connection con) {
+        this.con = con;
+    }
+
+    public PersonDao() {
+
+    }
+
     @Override
     public List<Person> getAllPersons() {
         List<Person> personList = new ArrayList<>();
@@ -124,7 +134,7 @@ public class PersonDao implements DaoPersonInterface {
 
     }
 
-
+    /********Interesting method  were used i previous  version********/
     public boolean isLoginTaken(String login) {
 
         try {
@@ -144,6 +154,7 @@ public class PersonDao implements DaoPersonInterface {
         return true;
     }
 
+    /********Interesting method  were used i previous  version********/
     public boolean isAuthenticated(String login, String password) {
         try {
             Connection con = ConnectionManager.getConnection();
@@ -159,12 +170,14 @@ public class PersonDao implements DaoPersonInterface {
         return true;
     }
 
+
+    /********Interesting method  were used i previous  version********/
     public void signUp(String lastName, String firstName, String login, String password, PersonRank rank) {
 
         try {
             Connection c = ConnectionManager.getConnection();
             PreparedStatement statement = c.prepareStatement(" INSERT INTO " +
-                    "person( last_name, first_name, login, password,rank_person) VALUES (?, ?,?,?,?)");
+                    "person( last_name, first_name, login, password, rank_person) VALUES (?, ?,?,?,?)");
             statement.setString(1, lastName);
             statement.setString(2, firstName);
             statement.setString(3, login);
@@ -195,6 +208,9 @@ public class PersonDao implements DaoPersonInterface {
         }
     }
 
+
+    /********Interesting method  were used i previous  version********/
+
     public boolean areLastNameAndFirstExist(String lastName, String firstName) {
 
         try {
@@ -216,5 +232,42 @@ public class PersonDao implements DaoPersonInterface {
         }
 
         return true;
+    }
+
+    /********* Method for Javalin Only***********/
+    public boolean updatePerson(Person person) {
+
+        Statement statement;
+        try {
+            statement = con.createStatement();
+            return statement.execute("UPDATE persons SET "
+                    + "last_name = \'" + person.getLastName() + "\',"
+                    + "first_name = \'" + person.getFirstName() + "\',"
+                    + "password\'" + person.getPassword() + "\',"
+                    + "rank_person\'" + person.getRank() + "\'"
+                    + "WHERE login = \'" + person.getLogin() + "\';");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    /********* Method for Javalin Only***********/
+
+    public boolean deleteUser(Person person) {
+
+        Statement statement;
+        try {
+            statement = con.createStatement();
+            return statement.execute("DELETE FROM person WHERE person_id = \'"
+                    + person.getPersonId() + "\'");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return false;
     }
 }

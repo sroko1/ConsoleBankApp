@@ -26,7 +26,7 @@ public class AdminConsole {
             System.out.println("Good day to You dear Admin");
             System.out.println("***********************");
             System.out.println(" 1. View All Accounts");
-            System.out.println(" 2. Edit Account");
+            System.out.println(" 2. Edit Account <- IN PROGRESS");
             System.out.println(" 3. Approve/Deny Account");
             System.out.println(" 4. Close Account");
             System.out.println(" 5. Deposit Amount");
@@ -51,10 +51,10 @@ public class AdminConsole {
                     as.viewAccounts();
                     break;
                 case 2:
-                    es.approveAccount();
+                    System.out.println("IN PROGRESS");
                     break;
                 case 3:
-                   // editAccount();
+                    es.approveAccount();
                     break;
                 case 4:
                     as.closeAccount();

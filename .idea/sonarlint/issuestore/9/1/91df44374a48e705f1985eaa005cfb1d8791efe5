@@ -1,21 +1,0 @@
-
-[
-java:S1854">Remove this useless assignment to local variable "controller".(„€ã­8‰†­ñç/
-L
-java:S1481"/Remove this unused "controller" local variable.(„€ã­8Ž†­ñç/
-M	java:S106"9Replace this use of System.out or System.err by a logger.(ÌÄ½*
-N	java:S106"9Replace this use of System.out or System.err by a logger.(©»œ¥
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ê±Î§
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(³Óà—þÿÿÿÿ
-P	java:S125"<This block of commented-out lines of code should be removed.(Üî‰c
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(ŠþÉüÿÿÿÿ
-f	java:S128&"LEnd this switch case with an unconditional break, return or throw statement.(Í‡¬‰úÿÿÿÿ
-V	java:S125'"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
-S	java:S106;"9Replace this use of System.out or System.err by a logger.(ìâ¯œÿÿÿÿÿ
-t
-java:S1171A"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
-S	java:S106B"9Replace this use of System.out or System.err by a logger.(ïžÌüÿÿÿÿ
-R
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8¢ˆØóç/
-g
-java:S2095"EUse try-with-resources or close this "Javalin" in a "finally" clause.(‘£¼ñûÿÿÿÿ8öÖºñç/

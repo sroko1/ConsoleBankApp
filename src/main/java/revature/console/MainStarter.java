@@ -2,13 +2,13 @@ package revature.console;
 
 import io.javalin.Javalin;
 import revature.controller.AccountController;
+import revature.controller.PersonController;
 import revature.dao.ConnectionManager;
 import revature.exception.InsufficientBalanceException;
 import revature.exception.InvalidAccountNumberException;
 import revature.exception.NegativeAmountException;
 
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -20,7 +20,8 @@ public class MainStarter {
 
         Javalin app = Javalin.create().start(7070);
         Connection conn = ConnectionManager.getConnection();
-        AccountController controller = new AccountController(app, conn);
+        PersonController personController = new PersonController(app,conn);
+        AccountController accountController = new AccountController(app, conn);
         Scanner proceed = new Scanner(System.in);
 
         do {

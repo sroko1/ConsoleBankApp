@@ -2,6 +2,7 @@ package revature.dao;
 
 import revature.model.Account;
 import revature.model.AccountType;
+import revature.model.Person;
 
 import java.math.BigDecimal;
 import java.sql.*;
@@ -12,10 +13,11 @@ public class AccountDao implements DaoAccountInterface {
 
     private Connection connection;
 
-    public AccountDao(Connection connection){
+    public AccountDao(Connection connection) {
         this.connection = connection;
     }
-    public AccountDao(){
+
+    public AccountDao() {
 
     }
 
@@ -221,6 +223,10 @@ public class AccountDao implements DaoAccountInterface {
         }
 
     }
+
+
+    /********* Method for Javalin Only***********/
+
     public boolean deleteAccount(Account account) {
 
         Statement statement;
@@ -236,8 +242,27 @@ public class AccountDao implements DaoAccountInterface {
         return false;
     }
 
+    /********* Method for Javalin Only***********/
 
+    public boolean modernizeAccount(Account account) {
+
+        Statement statement;
+        try {
+            statement = connection.createStatement();
+            return statement.execute("UPDATE account SET "
+                    + "acc_status = \'" + account.getStatus() + "\',"
+                    + "balance = \'" + account.getBalance() + "\',"
+                    + "type_acc\'" + account.getType() + "\',"
+                    + "sec_pername\'" + account.getSecondPersonName() + "\'"
+                    + "WHERE acc_number = \'" + account.getNumber() + "\';");
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+return false;
+    }
 
 }
+
 
 

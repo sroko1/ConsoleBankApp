@@ -59,7 +59,7 @@ public class AdminService {
         System.out.println("  Acct#    Balance     Status     Number   Type   First Name    Last Name");
 
         for (Account a : accountList)  {
-            System.out.printf("  %d     $ %6.2f    %8s   %8s   %8s", a.getAccountId(), a.getBalance(),
+            System.out.printf("  %d     EURO  %6.2f    %8s   %8s   %8s", a.getAccountId(), a.getBalance(),
                     a.getStatus(),a.getNumber(),a.getType());
            for (Person p : personList) {
                if (p.getPersonId() == a.getPersonId()) {

@@ -10,6 +10,7 @@ import revature.model.Account;
 import revature.model.AccountType;
 import revature.model.Person;
 import revature.model.PersonRank;
+
 import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -39,7 +40,7 @@ public class CustomerService {
 
             boolean check = true;
             while (check) {
-                System.out.println("Balance: " + " 'Euro' " + oldBalance + "." +  " Provide deposit Amount: ");
+                System.out.println("Balance: " + " 'Euro' " + oldBalance + "." + " Provide deposit Amount: ");
                 String value = sc.next();
                 deposit = BigDecimal.valueOf(getDouble(value));
 
@@ -228,7 +229,7 @@ public class CustomerService {
         AccountDao newAcc = new AccountDao();
         newAcc.openAccount(account);
 
-        int accSize = newAcc.getAllAccounts().size() ;
+        int accSize = newAcc.getAllAccounts().size();
         if (accSize == 0) {
             accId = accSize + 1;
         } else {

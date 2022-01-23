@@ -1,7 +1,6 @@
 package revature.model;
 
 
-
 public class Person {
 
     protected int personId;
@@ -10,6 +9,11 @@ public class Person {
     protected String login;
     protected String password;
     protected PersonRank rank;
+
+
+
+    public Person() {
+    }
 
 
     public Person(int personId, String lastName, String firstName, String login, String password, PersonRank rank) {
@@ -21,9 +25,11 @@ public class Person {
         this.rank = rank;
     }
 
-    public Person() {
 
-    }
+
+
+
+
 
     public int getPersonId() {
         return personId;
