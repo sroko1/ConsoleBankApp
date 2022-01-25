@@ -18,6 +18,7 @@ import java.util.Scanner;
 import static revature.console.MenuLogin.*;
 import static revature.model.AccountType.valueOf;
 import static revature.service.AdminService.log;
+import static revature.service.AdminService.personDao;
 
 public class CustomerService {
 
@@ -40,7 +41,7 @@ public class CustomerService {
 
             boolean check = true;
             while (check) {
-                System.out.println("Balance: " + " 'Euro' " + oldBalance + "." + " Provide deposit Amount: ");
+                System.out.println("Balance: " + " [Euro] " + oldBalance + "." + " Provide deposit Amount: ");
                 String value = sc.next();
                 deposit = BigDecimal.valueOf(getDouble(value));
 
@@ -53,7 +54,7 @@ public class CustomerService {
             }
             newBalance = BigDecimal.valueOf(oldBalance.doubleValue() + deposit.doubleValue());
             accountDao.deposit(acc, deposit);
-            System.out.println(" Account ID: " + acc + " ,no: " + acc_number + " Old Balance: " + "Euro" + oldBalance + "  =  New Balance: " + "'Euro' " + newBalance);
+            System.out.println(" Account ID: " + acc + " ,No: " + acc_number + " Old Balance: " + " [Euro] " + oldBalance + "  =  New Balance: " + " [Euro] " + newBalance);
             log.info(" LOG: Deposit was done and saved into Database successfully");
         } else {
             System.out.println("Account  is  waiting to approved");
@@ -68,7 +69,7 @@ public class CustomerService {
         if (accountDao.getAccountById(acc).getStatus().equals("Approved")) {
             boolean check = true;
             while (check) {
-                System.out.println("Balance: " + "Euro " + oldBalance + "Provide withdrawal Amount: ");
+                System.out.println(" Balance: " + " Euro " + oldBalance + "Provide withdrawal Amount: ");
                 String value = sc.next();
                 withdrawal = BigDecimal.valueOf(getDouble(value));
 
@@ -83,7 +84,7 @@ public class CustomerService {
             } else {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - withdrawal.doubleValue());
                 accountDao.withdraw(acc, withdrawal);
-                System.out.println("Account " + acc + " Old Balance: " + "EUro " + oldBalance + "  = New Balance: " + "Euro " + newBalance);
+                System.out.println(" Account ID" + acc + " Old Balance: " + " Euro " + oldBalance + "  = New Balance: " + " Euro " + newBalance);
                 log.info(" LOG: Withdraw was done and saved into Database successfully");
             }
         } else {
@@ -109,7 +110,7 @@ public class CustomerService {
                 }
             } else {
 
-                throw new InvalidAccountNumberException("You have provided wrong account");
+                throw new InvalidAccountNumberException(" You have provided wrong account");
                 // previous = 1;
 
             }
@@ -131,10 +132,10 @@ public class CustomerService {
             } else if (transfer.doubleValue() > 0) {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - transfer.doubleValue());
                 accountDao.transfer(acc, acc2, transfer);
-                System.out.println("Account " + acc + "   Old Balance: " + "Euro " + oldBalance + " = New Balance: " + "Euro " + newBalance);
+                System.out.println(" Account ID " + acc + "   Old Balance: " +" [Euro] " + oldBalance + " = New Balance: " + " [Euro] " + newBalance);
                 log.info(" LOG: Transfer was done and saved into Database successfully");
             } else if (!check && acc > 0) {
-                System.out.println("Account " + acc1 + "is waiting for approval");
+                System.out.println("Account(ID) " + acc1 + "is waiting for approval");
             }
         } else {
             System.out.println("Account  is  waiting to approved");
@@ -159,31 +160,31 @@ public class CustomerService {
             if (customer) {
                 check = false;
             } else {
-                System.out.println("Provided login is already taken");
+                System.out.println(" Provided login is already taken");
             }
         }
-        System.out.println("Password: ");
+        System.out.println(" Password: ");
         password = sc.next();
         check = true;
         while (check) {
-            System.out.println("Please confirm password");
+            System.out.println(" Please confirm password");
             passwordConfirmed = sc.next();
 
             if (passwordConfirmed.equals(password)) {
                 check = false;
             } else {
-                System.out.println("Confirmed password must be the same as password");
+                System.out.println(" Confirmed password must be the same as password");
             }
         }
-        System.out.println("Last Name: ");
+        System.out.println(" Last Name: ");
         lName = sc.next();
-        System.out.println("First name:  ");
+        System.out.println(" First name:  ");
         fName = sc.next();
         System.out.println("Account Number");
         number = sc.next();
         check = true;
 
-        System.out.println("What Kind of account it gonna be? ");
+        System.out.println(" What Kind of account it gonna be? ");
 
 
         while (check) {
@@ -194,7 +195,7 @@ public class CustomerService {
             if (choice >= 1 && choice <= 3) {
                 check = false;
             } else {
-                System.out.println("The specified value is not supported");
+                System.out.println(" The specified value is not supported");
             }
         }
 
@@ -209,7 +210,7 @@ public class CustomerService {
                 acType = valueOf("joint".toUpperCase());
         }
         if (choice == 3) {
-            System.out.println("Information about Second Person is needed");
+            System.out.println(" Information about Second Person is needed");
             secPer = sc.next();
         }
 
@@ -235,8 +236,25 @@ public class CustomerService {
         } else {
             accId = accSize;
         }
-        System.out.println(" *** New Account has been created with [Pending] status for the management review and approval.");
+        System.out.println(" *** New Account has been created with [Pending] status for the management review and approval. ***");
         log.info(" LOG: New customer account has been created successfully");
+    }
+
+    public void checkBalance(int acc) throws SQLException {
+        BigDecimal newBalance;
+        String lName, fName, accType;
+
+        int per;
+
+        newBalance = accountDao.getAccountById(acc).getBalance();
+        per = accountDao.getAccountById(acc).getPersonId();
+        lName = personDao.getPersonById(per).getLastName();
+        fName = personDao.getPersonById(per).getFirstName();
+        accType= String.valueOf(accountDao.getAccountById(acc).getType());
+        System.out.println(" Account(ID): " + acc + " Type Account: " + accType + " Name: " + fName + " " + lName);
+        System.out.println(" Balance: " + " Euro " + newBalance);
+        log.info(" LOG: Balance was accessed from Database successfully");
+
     }
 }
 

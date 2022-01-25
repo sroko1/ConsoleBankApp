@@ -1,0 +1,9 @@
+2022-01-24 09:59:21.146 [main] INFO  revature.service.AdminService -  LOG: All Accounts were listed from Database successfully
+2022-01-24 10:08:04.774 [main] INFO  revature.service.AdminService -  LOG: Balance was accessed from Database successfully
+2022-01-24 10:34:42.857 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-24 10:35:05.934 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-24 10:35:16.728 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-24 22:06:12.671 [main] INFO  revature.console.MenuLogin - Login:asshas been added  to DB.
+2022-01-24 22:59:04.930 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-24 23:08:51.513 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-24 23:13:22.003 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB

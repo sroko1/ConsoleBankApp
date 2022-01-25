@@ -125,7 +125,7 @@ public class AccountDao implements DaoAccountInterface {
 
     @Override
     public Account getAccountsByPersonId(int personId) throws SQLException {
-        Account account = null;
+        Account account;
         Connection con = ConnectionManager.getConnection();
         String sql = " SELECT * FROM account WHERE person_id = ?";
 

@@ -64,7 +64,7 @@ public class EmployeeService {
 
     public void approveAccount() throws SQLException {
 
-        List<Account> accounts = new ArrayList<>();
+        List<Account> accounts;
         AccountDao incomingAccount = new AccountDao();
         accounts = incomingAccount.getWaitingAccounts();
 
@@ -113,17 +113,17 @@ public class EmployeeService {
                 if (choice == 1 || choice ==2) {
                     AccountDao approveAccount = new AccountDao();
                     approveAccount.changeStatus(acc,status);
-                    System.out.println("Account Status: " + acc + "has changed to " + status);
+                    System.out.println(" Account Status: " + acc + " has changed to " + status);
                     log.info(" LOG: Account changed its status successfully.");
                 }else {
                     System.out.println("The specified value is not supported.");
                 }
             }else {
-                System.out.println("Account is NOT on Pending/Denied List.");
+                System.out.println(" Account is NOT on Pending/Denied List.");
             }
 
         }else {
-            System.out.println("No  incoming accounts at this moment.");
+            System.out.println("No incoming accounts at this moment.");
         }
 
     }

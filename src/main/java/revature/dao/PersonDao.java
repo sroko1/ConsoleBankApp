@@ -154,7 +154,7 @@ public class PersonDao implements DaoPersonInterface {
         return true;
     }
 
-    /********Interesting method  were used i previous  version********/
+    /********Interesting method  were used in previous  version********/
     public boolean isAuthenticated(String login, String password) {
         try {
             Connection con = ConnectionManager.getConnection();

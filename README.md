@@ -1,4 +1,4 @@
-###Console application that simulates a simple bank. Application is connected to a database and provide a Javalin-based API for web requests.
+###Console application that simulates a simple bank. Application is connected to a database and provide a Javalin-based API for web requests. It contains two controllers with CRUD requests.
 
 ● Customers are able to register with a username and password, and apply to open an account/ joint accounts.
 
@@ -9,7 +9,7 @@
 * Account information
 * Account balances
 * personal information.
-* 
+
 ● Employees are able to approve/deny open applications for accounts.
 
 ● Bank admins are able to view and edit all accounts.

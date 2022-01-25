@@ -7,10 +7,10 @@ import revature.model.SavingsAccount;
 
 import java.math.BigDecimal;
 
-public class SavingsAccountTest {
+class SavingsAccountTest {
 
     @Test
-    public void shouldInvokePayment() throws NegativeAmountException {
+    void shouldInvokePayment() throws NegativeAmountException {
         //given
 
         SavingsAccount account = new SavingsAccount();

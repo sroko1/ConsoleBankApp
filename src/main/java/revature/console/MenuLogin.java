@@ -23,7 +23,7 @@ public class MenuLogin {
     PersonDao personDao = new PersonDao();
     AccountDao accountDao = new AccountDao();
     CustomerService cs = new CustomerService();
-    private Logger log = LogManager.getLogger(MenuLogin.class);
+    static Logger log = LogManager.getLogger(MenuLogin.class);
 
 
     public void loggIn() throws SQLException, NegativeAmountException, InsufficientBalanceException, InvalidAccountNumberException {
@@ -71,7 +71,7 @@ public class MenuLogin {
             System.out.println();
             switch (choice) {
                 case 1:
-                    checkBalance(accId);
+                    cs.checkBalance(accId);
                     break;
                 case 2:
                     cs.depositByCustomer(accId);
@@ -173,22 +173,7 @@ public class MenuLogin {
 
     }
 
-    public void checkBalance(int acc) throws SQLException {
-        BigDecimal newBalance;
-        String lName, fName, accType;
 
-        int per;
-
-        newBalance = accountDao.getAccountById(acc).getBalance();
-        per = accountDao.getAccountById(acc).getPersonId();
-        lName = personDao.getPersonById(per).getLastName();
-        fName = personDao.getPersonById(per).getFirstName();
-        accType= String.valueOf(accountDao.getAccountById(acc).getType());
-        System.out.println(" Account(ID): " + acc + " Type Account: " + accType + " Name: " + fName + " " + lName);
-        System.out.println(" Balance: " + " Euro " + newBalance);
-        log.info(" LOG: Balance was accessed from Database successfully");
-
-    }
 
 //  DO NOT WANT TO  DELETE THIS - I MIGHT NEED IT LATER
 
