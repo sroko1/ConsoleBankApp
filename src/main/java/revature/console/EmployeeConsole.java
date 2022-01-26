@@ -75,7 +75,7 @@ public class EmployeeConsole {
         } else {
             System.out.println("Incorrect  login or password");
             log.warn("LOG: FAILURE = attempting to log!");
-            choice = 5;
+            choice = 6;
         }
         while (choice != 6) {
             System.out.println("Good day to You Hardworking Employee");
@@ -85,7 +85,7 @@ public class EmployeeConsole {
             System.out.println(" 3. Deposit Amount");
             System.out.println(" 4. Withdraw Amount");
             System.out.println(" 5. Transfer Amount");
-            System.out.println(" 6. Quit");
+            System.out.println(" 6. Back");
 
             boolean menu = true;
             while (menu) {

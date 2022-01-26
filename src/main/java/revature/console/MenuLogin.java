@@ -57,7 +57,7 @@ public class MenuLogin {
             System.out.println(" 2. Deposit Amount");
             System.out.println(" 3. Withdraw Amount");
             System.out.println(" 4. Transfer Amount");
-            System.out.println(" 5. Quit");
+            System.out.println(" 5. Back");
 
             boolean menu = true;
             while (menu) {

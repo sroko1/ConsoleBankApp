@@ -30,7 +30,7 @@ public class AdminConsole {
             System.out.println("Welcome to Good Bank Dear Admin ! Would you like to...");
             System.out.println("****************************");
             System.out.println("   1 - Log in ");
-            System.out.println("   2 - Quit");
+            System.out.println("   2 - Back");
 
             boolean menu = true;
             while (menu) {
@@ -73,11 +73,11 @@ public class AdminConsole {
         } else {
             System.out.println("Incorrect  login or password");
             log.warn("LOG: FAILURE = attempting to log!");
-            choice = 7;
+            choice = 8;
         }
             while (choice != 8) {
                 System.out.println("Good day to You dear Admin");
-                System.out.println("***********************");
+                System.out.println("********************************");
                 System.out.println(" 1. View All Accounts");
                 System.out.println(" 2. Edit Account <- IN PROGRESS");
                 System.out.println(" 3. Approve/Deny Account");
@@ -85,11 +85,11 @@ public class AdminConsole {
                 System.out.println(" 5. Deposit Amount");
                 System.out.println(" 6. Withdraw Amount");
                 System.out.println(" 7. Transfer Amount");
-                System.out.println(" 8. Quit");
+                System.out.println(" 8. Back");
 
                 boolean menu = true;
                 while (menu) {
-                    System.out.println("*************************");
+                    System.out.println("********************************");
                     System.out.print("Enter your choice ");
                     String entry = scanner.next();
                     choice = getInteger(entry);

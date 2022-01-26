@@ -19,10 +19,11 @@ public class CustomerConsole {
         while (choice != 3) {
 
             System.out.println("Welcome to Good Bank  ! Would you like to...");
-            System.out.println("****************************");
+            System.out.println("***************************************");
             System.out.println("   1 - Log in Existing Account");
             System.out.println("   2 - Register and Open New Account");
-            System.out.println("   3 - Quit");
+            System.out.println("   3 - Back");
+            System.out.println("***************************************");
 
             boolean menu = true;
             while (menu) {

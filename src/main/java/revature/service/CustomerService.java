@@ -54,7 +54,7 @@ public class CustomerService {
             }
             newBalance = BigDecimal.valueOf(oldBalance.doubleValue() + deposit.doubleValue());
             accountDao.deposit(acc, deposit);
-            System.out.println(" Account ID: " + acc + " ,No: " + acc_number + " Old Balance: " + " [Euro] " + oldBalance + "  =  New Balance: " + " [Euro] " + newBalance);
+            System.out.println(" Account ID: " + acc + " , [No: " + acc_number + "]" +  " Old Balance: " + " [Euro] " + oldBalance + "  =  New Balance: " + " [Euro] " + newBalance);
             log.info(" LOG: Deposit was done and saved into Database successfully");
         } else {
             System.out.println("Account  is  waiting to approved");
@@ -66,6 +66,7 @@ public class CustomerService {
 
 
         oldBalance = accountDao.getAccountById(acc).getBalance();
+        acc_number = accountDao.getAccountById(acc).getNumber();
         if (accountDao.getAccountById(acc).getStatus().equals("Approved")) {
             boolean check = true;
             while (check) {
@@ -81,10 +82,11 @@ public class CustomerService {
             }
             if (withdrawal.doubleValue() > oldBalance.doubleValue()) {
                 throw new InsufficientBalanceException("Not enough funds in your account");
+
             } else {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - withdrawal.doubleValue());
                 accountDao.withdraw(acc, withdrawal);
-                System.out.println(" Account ID" + acc + " Old Balance: " + " Euro " + oldBalance + "  = New Balance: " + " Euro " + newBalance);
+                System.out.println(" [Account ID" + acc + "]" + "[No: " + acc_number + "]" + ",  Old Balance: " + " Euro " + oldBalance + "  = New Balance: " + " Euro " + newBalance);
                 log.info(" LOG: Withdraw was done and saved into Database successfully");
             }
         } else {
@@ -93,48 +95,54 @@ public class CustomerService {
     }
 
     public void transferByCustomer(int acc) throws SQLException, InvalidAccountNumberException, NegativeAmountException, InsufficientBalanceException {
-        int acc2;
+        int acc2 = 0;
         int acc1;
+        int previous = 0;
         boolean check = false;
         oldBalance = accountDao.getAccountById(acc).getBalance();
         if (accountDao.getAccountById(acc).getStatus().equals("Approved")) {
-            System.out.println("Provide an account You  would like  to transfer to: ");
+            System.out.println("Provide an Account(ID) You  would like  to transfer to: ");
             String entry = sc.next();
             acc1 = getInteger(entry);
 
             boolean found = findAccount(acc1);
             if (acc1 > 0 && found) {
                 acc2 = accountDao.getAccountById(acc1).getAccountId();
-                if (accountDao.getAccountById(acc2).getStatus().equals("Waiting")) {
+                if (accountDao.getAccountById(acc2).getStatus().equals("Approved")) {
                     check = true;
                 }
             } else {
 
-                throw new InvalidAccountNumberException(" You have provided wrong account");
-                // previous = 1;
+                //throw new InvalidAccountNumberException(" You have provided wrong account");
+                System.out.println("\n Incorrect  Account");
+                previous = 1;
 
             }
             if (acc2 > 0 && check) {
                 while (check) {
-                    System.out.print("Balance (Euro " + oldBalance + ")" + ", Provide the transfer amount: ");
+                    System.out.print("Balance [Euro " + oldBalance + "]" + ", Provide the transfer amount: ");
                     entry = sc.next();
                     transfer = BigDecimal.valueOf(getDouble(entry));
 
                     if (transfer.doubleValue() > 0) {
                         check = false;
                     } else {
-                        throw new NegativeAmountException("Negative or Zero Amount");
+                        //throw new NegativeAmountException("Negative or Zero Amount");
+                        System.out.println("\n Invalid Amount");
                     }
                 }
             }
-            if (transfer.doubleValue() > oldBalance.doubleValue()) {
-                throw new InsufficientBalanceException("Not enough funds in your account");
-            } else if (transfer.doubleValue() > 0) {
+            if (transfer.doubleValue() > oldBalance.doubleValue() && found) {
+               // throw new InsufficientBalanceException("Not enough funds in your account");
+                System.out.println( "\n Insufficient fund for this transfer transaction! ");
+            } else if (transfer.doubleValue() > 0 && found) {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - transfer.doubleValue());
                 accountDao.transfer(acc, acc2, transfer);
-                System.out.println(" Account ID " + acc + "   Old Balance: " +" [Euro] " + oldBalance + " = New Balance: " + " [Euro] " + newBalance);
+                System.out.println(" [Account ID " + acc + "]"+  "   Old Balance: " + " [Euro] " + oldBalance + " = New Balance: " + " [Euro] " + newBalance);
                 log.info(" LOG: Transfer was done and saved into Database successfully");
             } else if (!check && acc > 0) {
+                if (previous == 0)
+
                 System.out.println("Account(ID) " + acc1 + "is waiting for approval");
             }
         } else {
@@ -250,8 +258,8 @@ public class CustomerService {
         per = accountDao.getAccountById(acc).getPersonId();
         lName = personDao.getPersonById(per).getLastName();
         fName = personDao.getPersonById(per).getFirstName();
-        accType= String.valueOf(accountDao.getAccountById(acc).getType());
-        System.out.println(" Account(ID): " + acc + " Type Account: " + accType + " Name: " + fName + " " + lName);
+        accType = String.valueOf(accountDao.getAccountById(acc).getType());
+        System.out.println(" [Account(ID): " + acc + "]" + " Type Account: " + accType + " Name: " + fName + " " + lName);
         System.out.println(" Balance: " + " Euro " + newBalance);
         log.info(" LOG: Balance was accessed from Database successfully");
 

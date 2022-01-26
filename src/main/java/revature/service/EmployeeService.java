@@ -55,6 +55,7 @@ public class EmployeeService {
         int account = MenuLogin.getInteger(entry);
 
         boolean found = MenuLogin.findAccount(account);
+
         if (account > 0 && found) {
             cs.transferByCustomer(account);
         } else {
@@ -77,7 +78,7 @@ public class EmployeeService {
             System.out.println(" Account    TYPE    STATUS");
             System.out.println("****************************");
             for (Account a : accounts) {
-                System.out.println(a.getAccountId() + "  " + a.getType() + "   " + a.getStatus());
+                System.out.println("[" + a.getAccountId() + "]" +  "  " + a.getType() + "   " + a.getStatus());
                 System.out.println();
             }
             String entry;
@@ -113,7 +114,7 @@ public class EmployeeService {
                 if (choice == 1 || choice ==2) {
                     AccountDao approveAccount = new AccountDao();
                     approveAccount.changeStatus(acc,status);
-                    System.out.println(" Account Status: " + acc + " has changed to " + status);
+                    System.out.println(" Account Status: " + "[" + acc + "]" +  " has changed to " + status);
                     log.info(" LOG: Account changed its status successfully.");
                 }else {
                     System.out.println("The specified value is not supported.");
