@@ -1,0 +1,4 @@
+2022-01-27 11:40:13.753 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-27 11:41:23.653 [main] WARN  revature.console.MenuLogin - LOG: FAILURE = attempting to log!
+2022-01-27 11:41:39.983 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-27 11:42:09.933 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully

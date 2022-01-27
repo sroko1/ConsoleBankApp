@@ -31,3 +31,87 @@
 2022-01-26 11:50:57.912 [main] WARN  revature.console.MenuLogin - LOG: FAILURE = attempting to log!
 2022-01-26 11:51:07.328 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
 2022-01-26 11:51:14.067 [main] INFO  revature.service.AdminService -  LOG: All Accounts were listed from Database successfully
+2022-01-26 12:01:37.474 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 12:02:15.535 [main] INFO  revature.service.AdminService -  LOG: Transfer was done and saved into Database successfully
+2022-01-26 12:02:32.363 [main] INFO  revature.service.AdminService -  LOG: All Accounts were listed from Database successfully
+2022-01-26 12:03:19.168 [main] INFO  revature.service.AdminService -  LOG: Transfer was done and saved into Database successfully
+2022-01-26 12:03:23.558 [main] INFO  revature.service.AdminService -  LOG: All Accounts were listed from Database successfully
+2022-01-26 12:12:36.717 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 12:17:51.637 [main] INFO  revature.service.AdminService -  LOG: Transfer was done and saved into Database successfully
+2022-01-26 12:18:38.452 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 12:18:40.479 [main] INFO  revature.service.AdminService -  LOG: Balance was accessed from Database successfully
+2022-01-26 14:29:35.562 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 14:31:12.786 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 14:31:40.385 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 14:32:23.334 [main] WARN  revature.console.MenuLogin - LOG: FAILURE = attempting to log!
+2022-01-26 14:32:36.576 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 14:32:41.316 [main] INFO  revature.service.AdminService -  LOG: Balance was accessed from Database successfully
+2022-01-26 14:32:48.993 [main] INFO  revature.service.AdminService -  LOG: Deposit was done and saved into Database successfully.
+2022-01-26 14:33:23.923 [main] INFO  revature.service.AdminService -  LOG: Withdraw was done and saved into DB successfully
+2022-01-26 14:34:24.777 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 14:35:39.923 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 14:35:59.770 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 14:36:19.735 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 14:36:30.244 [main] INFO  revature.service.AdminService -  LOG: All Accounts were listed from Database successfully
+2022-01-26 15:00:47.124 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:01:27.494 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:01:33.293 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 15:19:14.634 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:24:13.529 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:25:09.574 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 15:27:56.390 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:28:12.332 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:29:03.475 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 15:32:11.494 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:35:44.393 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:36:02.007 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:36:43.641 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 15:44:47.758 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:45:02.037 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:46:47.146 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:47:17.829 [main] WARN  revature.console.MenuLogin - LOG: FAILURE = attempting to log!
+2022-01-26 15:47:33.713 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:53:10.398 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 15:53:24.320 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 15:53:30.770 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 16:07:27.634 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 16:07:50.264 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 16:08:00.085 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 16:39:28.431 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 16:39:48.637 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 16:39:57.169 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 16:40:27.988 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 16:40:36.631 [main] INFO  revature.service.AdminService -  LOG: Deposit was done and saved into Database successfully.
+2022-01-26 16:40:58.940 [main] INFO  revature.service.AdminService -  LOG: Deposit was done and saved into Database successfully.
+2022-01-26 16:41:07.359 [main] INFO  revature.service.AdminService -  LOG: Withdraw was done and saved into DB successfully
+2022-01-26 17:18:36.220 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 17:19:28.770 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 17:19:40.003 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 17:20:09.022 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 17:20:12.424 [main] INFO  revature.service.AdminService -  LOG: Balance was accessed from Database successfully
+2022-01-26 17:20:20.895 [main] INFO  revature.service.AdminService -  LOG: Deposit was done and saved into Database successfully.
+2022-01-26 17:20:39.314 [main] INFO  revature.service.AdminService -  LOG: Withdraw was done and saved into DB successfully
+2022-01-26 17:21:03.588 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 17:28:19.994 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 17:39:07.234 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 17:39:20.945 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 17:40:05.634 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 18:01:43.502 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 18:02:04.617 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 18:13:23.325 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 18:13:38.992 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 18:13:51.856 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 18:59:27.722 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 18:59:57.579 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 19:00:50.087 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 19:11:33.243 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 19:11:56.767 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 19:12:08.082 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 19:13:55.346 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 19:14:19.216 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 19:14:27.510 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 19:15:37.845 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully
+2022-01-26 19:15:58.218 [main] INFO  revature.console.MenuLogin - LOG: Success = person login in DB
+2022-01-26 19:16:08.225 [main] INFO  revature.service.AdminService -  LOG: Account changed its status successfully.
+2022-01-26 19:16:28.231 [main] INFO  revature.service.AdminService -  LOG: Account was deleted successfully
+2022-01-26 19:51:03.415 [main] INFO  revature.service.AdminService -  LOG: New customer account has been created successfully

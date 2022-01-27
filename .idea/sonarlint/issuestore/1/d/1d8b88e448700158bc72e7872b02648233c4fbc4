@@ -1,0 +1,39 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¼—÷ûùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(í–İÈ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(ñ´Ã
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Á¶¥Íşÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(´Òì„
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(ìâ¯œÿÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+7	java:S131/""Add a default case to this switch.(¨ÕÉ
+h
+java:S37767"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÃïÀæ
+A
+java:S1659;"&Declare "password" on a separate line.(õ©Éÿÿÿÿÿ
+V
+java:S1117:";Rename "scanner" which hides the field declared at line 21.(ù ƒ‘üÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ÿ—è³ûÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(Û­•éşÿÿÿÿ
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(ç£Ã¥
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(´œ¯½
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(Ğ¥„²øÿÿÿÿ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(¬»‘’
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(™¼åÃüÿÿÿÿ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(¬Ç¬ã
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(Ïå–
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(êı¥ºøÿÿÿÿ
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(Ôêïùşÿÿÿÿ
+M	java:S106U"9Replace this use of System.out or System.err by a logger.(åë"
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(ÎÆû¬şÿÿÿÿ
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(¸ş¢öûÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(¾¥­Šûÿÿÿÿ
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(™¼åÃüÿÿÿÿ
+N	java:S106]"9Replace this use of System.out or System.err by a logger.(•âŠ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(³¾õÂúÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+7	java:S131g""Add a default case to this switch.(¨ÕÉ
+T
+java:S1135l"2Complete the task associated to this TODO comment.(Î‰½¼úÿÿÿÿ8‰Ï¡„é/
+a
+java:S1301/"KReplace this "switch" statement by "if" statements to increase readability.(¨ÕÉ

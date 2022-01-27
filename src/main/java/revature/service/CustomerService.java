@@ -49,13 +49,14 @@ public class CustomerService {
                     check = false;
 
                 } else {
-                    throw new NegativeAmountException("Negative or Zero Amount");
+                   // throw new NegativeAmountException("Negative or Zero Amount"); //TODO
+                    System.out.println(" Invalid Amount! ");
                 }
             }
             newBalance = BigDecimal.valueOf(oldBalance.doubleValue() + deposit.doubleValue());
             accountDao.deposit(acc, deposit);
             System.out.println(" Account ID: " + acc + " , [No: " + acc_number + "]" +  " Old Balance: " + " [Euro] " + oldBalance + "  =  New Balance: " + " [Euro] " + newBalance);
-            log.info(" LOG: Deposit was done and saved into Database successfully");
+            log.info(" LOG: Deposit was done and saved into Database successfully.");
         } else {
             System.out.println("Account  is  waiting to approved");
         }
@@ -77,17 +78,20 @@ public class CustomerService {
                 if (withdrawal.doubleValue() > 0) {
                     check = false;
                 } else {
-                    throw new NegativeAmountException("Negative or Zero Amount");
+                    //throw new NegativeAmountException("Negative or Zero Amount"); //TODO
+                    System.out.println("Incorrect Amount! ");
                 }
             }
             if (withdrawal.doubleValue() > oldBalance.doubleValue()) {
-                throw new InsufficientBalanceException("Not enough funds in your account");
+               // throw new InsufficientBalanceException("Not enough funds in your account"); TODO
+                System.out.println("Not enough funds in your account");
+
 
             } else {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - withdrawal.doubleValue());
                 accountDao.withdraw(acc, withdrawal);
                 System.out.println(" [Account ID" + acc + "]" + "[No: " + acc_number + "]" + ",  Old Balance: " + " Euro " + oldBalance + "  = New Balance: " + " Euro " + newBalance);
-                log.info(" LOG: Withdraw was done and saved into Database successfully");
+                log.info(" LOG: Withdraw was done and saved into DB successfully");
             }
         } else {
             System.out.println("Account  is  waiting to approved");
@@ -113,7 +117,7 @@ public class CustomerService {
                 }
             } else {
 
-                //throw new InvalidAccountNumberException(" You have provided wrong account");
+                //throw new InvalidAccountNumberException(" You have provided wrong account"); //TODO
                 System.out.println("\n Incorrect  Account");
                 previous = 1;
 
@@ -127,13 +131,13 @@ public class CustomerService {
                     if (transfer.doubleValue() > 0) {
                         check = false;
                     } else {
-                        //throw new NegativeAmountException("Negative or Zero Amount");
+                        //throw new NegativeAmountException("Negative or Zero Amount"); //TODO
                         System.out.println("\n Invalid Amount");
                     }
                 }
             }
             if (transfer.doubleValue() > oldBalance.doubleValue() && found) {
-               // throw new InsufficientBalanceException("Not enough funds in your account");
+               // throw new InsufficientBalanceException("Not enough funds in your account");  //TODO
                 System.out.println( "\n Insufficient fund for this transfer transaction! ");
             } else if (transfer.doubleValue() > 0 && found) {
                 newBalance = BigDecimal.valueOf(oldBalance.doubleValue() - transfer.doubleValue());
@@ -156,7 +160,7 @@ public class CustomerService {
 
 
         boolean check = true;
-        int choice = 1, accId, perId;
+        int choice = 1, accId , perId;
         String fName, lName, secPer = "", login = "", number, password, passwordConfirmed;
         AccountType acType = null;
 
@@ -222,7 +226,7 @@ public class CustomerService {
             secPer = sc.next();
         }
 
-        Person person = new Person(0, lName, fName, login, password, PersonRank.CUSTOMER);
+        Person person = new Person( 0, lName, fName, login, password, PersonRank.CUSTOMER);
         PersonDao newPerson = new PersonDao();
         newPerson.addPerson(person);
 
@@ -240,7 +244,7 @@ public class CustomerService {
 
         int accSize = newAcc.getAllAccounts().size();
         if (accSize == 0) {
-            accId = accSize + 1;
+            accId = accSize +1;
         } else {
             accId = accSize;
         }

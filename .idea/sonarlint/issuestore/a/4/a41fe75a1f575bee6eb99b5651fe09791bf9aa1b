@@ -1,0 +1,13 @@
+
+H
+java:S1128"2Remove this unused import 'revature.model.Person'.(î‹ 
+u
+java:S1104"ZMake getAllAccounts a static final constant or non-public and provide accessors if needed.(›¾¾şÿÿÿÿÿ
+o
+java:S1104+"ZMake getAccountById a static final constant or non-public and provide accessors if needed.(Ñ
+w
+java:S11043"\Make createNewAccount a static final constant or non-public and provide accessors if needed.(ËØ¹»şÿÿÿÿ
+w
+java:S1104="\Make modernizeAccount a static final constant or non-public and provide accessors if needed.(Ê®•úÿÿÿÿ
+o
+java:S1104E"YMake deleteAccount a static final constant or non-public and provide accessors if needed.(ü¾ÀË

@@ -14,8 +14,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-import static revature.console.MenuLogin.findAccount;
-import static revature.console.MenuLogin.getInteger;
+import static revature.console.MenuLogin.*;
 import static revature.model.AccountType.valueOf;
 
 public class AdminService {
@@ -30,20 +29,30 @@ public class AdminService {
 
         System.out.print(" Enter Account to be deleted: ");
         String entry = sc.next();
-        int acct = getInteger(entry);
+        //int acct = getInteger(entry);
 
-        boolean found = findAccount(acct);
-        AccountDao findAcc = new AccountDao();
-        PersonDao deletePer = new PersonDao();
+       // boolean found = findAccount(acct);
+       // AccountDao findAcc = new AccountDao();
+       // PersonDao deletePer = new PersonDao();
 
+        int per = getInteger(entry);
+        boolean found = findPerson(String.valueOf(per));
+        PersonDao findP = new PersonDao();
+        AccountDao closeA = new AccountDao();
 
-        if (acct > 0 && found) {
-            int per = findAcc.getAccountById(acct).getPersonId();
-            deletePer.deletePerson(per);
-            System.out.println("Account# [" + acct + "] deleted successfully ");
+        if (per > 0 && found) {
+            int ac = findP.getPersonById(per).getPersonId();
+            closeA.closeAccount(ac);
+
+       // if (acct > 0 && found) {
+        //    int per = findAcc.getAccountById(acct).getPersonId();
+         //   deletePer.deletePerson(per);
+        System.out.println("Account belongs to Person(ID): [" + per + "] deleted successfully ");
+           // System.out.println("Account(ID) [" + acct + "] deleted successfully ");
             log.info(" LOG: Account was deleted successfully");
         } else {
-            throw new InvalidAccountNumberException("Wrong account");
+           // throw new InvalidAccountNumberException("Wrong account");// TODO
+            System.out.println("Invalid Account!");
         }
 
     }

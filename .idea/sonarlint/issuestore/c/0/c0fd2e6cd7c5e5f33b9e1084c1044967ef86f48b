@@ -1,0 +1,17 @@
+
+W
+java:S1118":Add a private constructor to hide the implicit public one.(²ëüÓ8­œÖğç/
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ãé‰Øúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”¶à‰ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.( ØÂ‰şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Îúÿûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿìèµûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ëï¥î
+S	java:S106"9Replace this use of System.out or System.err by a logger.( ØÂ‰şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´Òì„
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ìâ¯œÿÿÿÿÿ
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Šóã®é/
+>	java:S131(""Add a default case to this switch.(¨ÕÉ8ÁòÇç/
+h
+java:S1301("KReplace this "switch" statement by "if" statements to increase readability.(¨ÕÉ8ÂòÇç/

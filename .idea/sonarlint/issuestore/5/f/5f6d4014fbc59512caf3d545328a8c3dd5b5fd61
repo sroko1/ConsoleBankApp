@@ -1,0 +1,28 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(όΐ΅8­Εάθ/
+H
+java:S1659!"&Declare "password" on a separate line.(υ©Ιÿÿÿÿÿ8­Εάθ/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(ÿ—θ³ϋÿÿÿÿ8­Εάθ/
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(Ϋ­•ιώÿÿÿÿ8­Εάθ/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(η£Γ¥8­Εάθ/
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(΄―½8­Εάθ/
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(Π¥„²ψÿÿÿÿ8­Εάθ/
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ΌΕ“8­Εάθ/
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(ªΣΌαώÿÿÿÿ8­Εάθ/
+T	java:S1068"9Replace this use of System.out or System.err by a logger.(ϋ›=8ΌΕάθ/
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(¶Ρδα8ΌΕάθ/
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(¨€΄Ω8ΌΕάθ/
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(ί8ΌΕάθ/
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(ι™‘Σ8ΌΕάθ/
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(•β8ΌΕάθ/
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(βαΔ8ΌΕάθ/
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(ªΣΌαώÿÿÿÿ8ΌΕάθ/
+>	java:S131H""Add a default case to this switch.(¨ΥΙ8ΌΕάθ/
+Y	java:S125΄"<This block of commented-out lines of code should be removed.(εΥϋ8ΫΕάθ/
+N
+java:S1128"1Remove this unused import 'java.math.BigDecimal'.(κκ8ΫΕάθ/
+>
+java:S1643f"Use a StringBuilder instead.(Υ«Η¬ψÿÿÿÿ8ΫΕάθ/
+>
+java:S1643}"Use a StringBuilder instead.(Υ«Η¬ψÿÿÿÿ8ΫΕάθ/
